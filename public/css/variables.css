@@ -1,0 +1,39 @@
+/* ==========================================================
+   VARIÁVEIS DA MARCA SARAH
+   Aqui ficam as cores, fontes e medidas do site inteiro.
+   ========================================================== */
+
+:root {
+  /* ---- Paleta oficial da marca (cores fixas) ---- */
+  --marrom-escuro: #2b1a10;
+  --caramelo: #a47551;
+  --bege: #dcc7ab;
+  --dourado: #c9a24d;
+  --dourado-claro: #e8cc83;
+  --dourado-escuro: #a67c2e;
+  --preto: #0b0b0b;
+  --creme: #f4ebe0;
+
+  /* ---- Cores de uso (os temas das datas vão trocar estas) ---- */
+  --cor-fundo: var(--creme);
+  --cor-fundo-escuro: var(--marrom-escuro);
+  --cor-texto: var(--marrom-escuro);
+  --cor-texto-claro: var(--bege);
+  --cor-destaque: var(--dourado);
+  --cor-secundaria: var(--caramelo);
+  --cor-card-claro: var(--bege);
+
+  --gradiente-dourado: linear-gradient(
+    135deg,
+    var(--dourado-claro),
+    var(--dourado) 50%,
+    var(--dourado-escuro)
+  );
+
+  /* ---- Fontes ---- */
+  --fonte-titulo: 'Cormorant Garamond', Georgia, serif;
+  --fonte-texto: 'Jost', Arial, sans-serif;
+
+  /* ---- Medidas ---- */
+  --largura-max: 1200px;
+}

@@ -1,0 +1,159 @@
+/* ==========================================================
+   ESTILOS DA PÁGINA INICIAL
+   ========================================================== */
+
+/* ---------- Destaque principal ---------- */
+
+.hero {
+  background: radial-gradient(circle at 50% 30%, #3d2616, var(--cor-fundo-escuro) 70%);
+  color: var(--cor-texto-claro);
+  text-align: center;
+  padding: 6rem 0 5rem;
+}
+
+.hero__marca {
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  letter-spacing: 0.3em;
+  margin-right: -0.3em;
+}
+
+.hero .divisor {
+  margin-block: 1.5rem;
+}
+
+.hero__slogan {
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- Seções ---------- */
+
+.secao {
+  padding: 5rem 0;
+}
+
+.secao__titulo {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.secao__subtitulo {
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-bottom: 3rem;
+}
+
+/* ---------- Duas linhas: Signature e Essence ---------- */
+
+.linhas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.linha {
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.linha__nome {
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  margin: 0.5rem 0;
+}
+
+.linha__tipo {
+  margin-bottom: 1.5rem;
+}
+
+.linha__texto {
+  max-width: 280px;
+  margin: 0 auto 2rem;
+}
+
+.linha--signature {
+  background: var(--cor-fundo-escuro);
+  color: var(--cor-texto-claro);
+}
+
+.linha--signature .linha__nome {
+  color: var(--cor-destaque);
+}
+
+.linha--essence {
+  background: var(--cor-card-claro);
+  color: var(--cor-texto);
+}
+
+.linha--essence .botao {
+  color: var(--cor-texto);
+  border-color: var(--cor-texto);
+}
+
+.linha--essence .botao:hover {
+  background: var(--cor-texto);
+  color: var(--cor-card-claro);
+}
+
+/* ---------- Vitrine (exemplo, será dinâmica na Fase 3) ---------- */
+
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.produto__imagem {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-card-claro);
+  color: var(--cor-destaque);
+  font-size: 2rem;
+}
+
+.produto__nome {
+  margin-top: 0.8rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+}
+
+.produto__preco {
+  color: var(--cor-secundaria);
+  font-size: 0.9rem;
+}
+
+/* ---------- Diferenciais ---------- */
+
+.diferenciais {
+  background: var(--cor-fundo-escuro);
+  color: var(--cor-texto-claro);
+  padding: 3rem 0;
+}
+
+.diferenciais__lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.diferenciais__item span {
+  display: block;
+  color: var(--cor-destaque);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Celular ---------- */
+
+@media (max-width: 760px) {
+  .linhas {
+    grid-template-columns: 1fr;
+  }
+
+  .secao {
+    padding: 3.5rem 0;
+  }
+}

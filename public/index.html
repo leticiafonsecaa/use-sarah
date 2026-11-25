@@ -4,22 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah | Seu brilho. Sua assinatura.</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #2b1a10;
-      color: #d4af37;
-      font-family: Georgia, serif;
-      letter-spacing: 0.5em;
-      font-size: 2rem;
-    }
-  </style>
+  <meta name="description" content="Sarah: semijoias e bijuterias com elegância em cada detalhe. Enviamos para todo o Brasil.">
+
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos (a ordem importa: variáveis primeiro) -->
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-  <h1>SARAH</h1>
+
+  <div class="topbar">Enviamos para todo o Brasil ✦ Banho de ouro</div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <nav>
+        <ul class="cabecalho__menu">
+          <li><a href="#linhas">Coleções</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+        </ul>
+      </nav>
+      <a href="/" class="cabecalho__logo">SARAH</a>
+      <a href="#contato" class="cabecalho__contato">Fale conosco</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__marca texto-dourado">SARAH</h1>
+        <div class="divisor">✦</div>
+        <p class="hero__slogan rotulo">Seu brilho. Sua assinatura.</p>
+        <a href="#linhas" class="botao">Conhecer coleções</a>
+      </div>
+    </section>
+
+    <section class="secao" id="linhas">
+      <div class="container">
+        <h2 class="secao__titulo">Duas linhas, um mesmo propósito</h2>
+        <p class="secao__subtitulo">Elegância em cada detalhe</p>
+
+        <div class="linhas">
+          <article class="linha linha--signature">
+            <p class="rotulo">Coleção</p>
+            <h3 class="linha__nome">SIGNATURE</h3>
+            <p class="linha__tipo rotulo">Semijoias</p>
+            <p class="linha__texto">Peças em banho de ouro, zircônias e design exclusivo para momentos especiais.</p>
+            <a href="#destaques" class="botao">Ver peças</a>
+          </article>
+
+          <article class="linha linha--essence">
+            <p class="rotulo">Coleção</p>
+            <h3 class="linha__nome">ESSENCE</h3>
+            <p class="linha__tipo rotulo">Bijuterias</p>
+            <p class="linha__texto">Acessórios modernos e estilosos para o dia a dia com leveza e personalidade.</p>
+            <a href="#destaques" class="botao">Ver peças</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="destaques">
+      <div class="container">
+        <h2 class="secao__titulo">Detalhes que falam por você</h2>
+        <p class="secao__subtitulo">Nossos destaques</p>
+
+        <!-- Cards de exemplo. Na Fase 3 virão do banco de dados -->
+        <div class="vitrine">
+          <article class="produto">
+            <div class="produto__imagem">✦</div>
+            <h3 class="produto__nome">Peça exemplo</h3>
+            <p class="produto__preco">Em breve</p>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem">✦</div>
+            <h3 class="produto__nome">Peça exemplo</h3>
+            <p class="produto__preco">Em breve</p>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem">✦</div>
+            <h3 class="produto__nome">Peça exemplo</h3>
+            <p class="produto__preco">Em breve</p>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem">✦</div>
+            <h3 class="produto__nome">Peça exemplo</h3>
+            <p class="produto__preco">Em breve</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="diferenciais">
+      <div class="container diferenciais__lista rotulo">
+        <div class="diferenciais__item"><span>◇</span>Peças selecionadas</div>
+        <div class="diferenciais__item"><span>✦</span>Qualidade premium</div>
+        <div class="diferenciais__item"><span>♡</span>Banho de ouro</div>
+        <div class="diferenciais__item"><span>❖</span>Embalagem especial</div>
+        <div class="diferenciais__item"><span>➜</span>Enviamos para todo o Brasil</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <p class="rodape__logo">SARAH</p>
+      <p class="rodape__slogan rotulo">Seu brilho. Sua assinatura.</p>
+      <nav class="rodape__links">
+        <a href="#linhas">Coleções</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+      </nav>
+      <p class="rodape__copyright">© 2026 Sarah Semijoias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
