@@ -146,6 +146,14 @@
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Imagem de produto (quando existir foto) ---------- */
+
+.produto__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ---------- Celular ---------- */
 
 @media (max-width: 760px) {
